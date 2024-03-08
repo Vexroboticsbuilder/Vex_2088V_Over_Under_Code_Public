@@ -56,42 +56,47 @@ void drive_example() {
 void turn_example() {
   // The first parameter is target degrees
   // The second parameter is max speed the robot will drive at
-  inake.move(-127);
+  // inake.move(-127);
 
-  chassis.pid_drive_set(-180_in, DRIVE_SPEED, true);
+  // chassis.pid_drive_set(-180_in, DRIVE_SPEED, true);
+  // chassis.pid_wait();
+
+  // chassis.pid_turn_set(-45_deg, TURN_SPEED);
+  // chassis.pid_wait();
+
+  // chassis.pid_drive_set(-50_in, DRIVE_SPEED, true);
+  // chassis.pid_wait();
+
+  // chassis.pid_turn_set(-45_deg, TURN_SPEED);
+  // chassis.pid_wait();
+
+  // chassis.pid_drive_set(-50_in, DRIVE_SPEED, true);
+  // chassis.pid_wait();
+
+  // chassis.pid_drive_set(-50_in, DRIVE_SPEED, true);
+  // chassis.pid_wait();
+
+  // chassis.pid_drive_set(50_in, DRIVE_SPEED, true);
+  // chassis.pid_wait();
+
+  // chassis.pid_turn_set(22.5_deg, TURN_SPEED);
+  // chassis.pid_wait();
+
+  // chassis.pid_drive_set(50_in, DRIVE_SPEED, true);
+  // chassis.pid_wait();
+
+  // chassis.pid_turn_set(22.5_deg, TURN_SPEED);
+  // chassis.pid_wait();
+
+  // chassis.pid_drive_set(180_in, DRIVE_SPEED, true);
+  // chassis.pid_wait();
+
+  // pros::delay(2000);
+  pros::delay(40000);
+
+  chassis.pid_drive_set(5000_in, DRIVE_SPEED, true);
   chassis.pid_wait();
 
-  chassis.pid_turn_set(-45_deg, TURN_SPEED);
-  chassis.pid_wait();
-
-  chassis.pid_drive_set(-50_in, DRIVE_SPEED, true);
-  chassis.pid_wait();
-
-  chassis.pid_turn_set(-45_deg, TURN_SPEED);
-  chassis.pid_wait();
-
-  chassis.pid_drive_set(-50_in, DRIVE_SPEED, true);
-  chassis.pid_wait();
-
-  chassis.pid_drive_set(-50_in, DRIVE_SPEED, true);
-  chassis.pid_wait();
-
-  chassis.pid_drive_set(50_in, DRIVE_SPEED, true);
-  chassis.pid_wait();
-
-  chassis.pid_turn_set(22.5_deg, TURN_SPEED);
-  chassis.pid_wait();
-
-  chassis.pid_drive_set(50_in, DRIVE_SPEED, true);
-  chassis.pid_wait();
-
-  chassis.pid_turn_set(22.5_deg, TURN_SPEED);
-  chassis.pid_wait();
-
-  chassis.pid_drive_set(180_in, DRIVE_SPEED, true);
-  chassis.pid_wait();
-
-  pros::delay(2000);
 }
 
 ///
@@ -99,6 +104,8 @@ void turn_example() {
 ///
 void drive_and_turn() {
   inake.move(-127);
+
+
 
   chassis.pid_drive_set(-45_in, DRIVE_SPEED, true);
   chassis.pid_wait();
@@ -112,29 +119,29 @@ void drive_and_turn() {
   chassis.pid_drive_set(35_in, DRIVE_SPEED, true);
   chassis.pid_wait();
 
-  chassis.pid_turn_set(-3_deg, TURN_SPEED);
-  chassis.pid_wait();
+  // chassis.pid_turn_set(-3_deg, TURN_SPEED);
+  // chassis.pid_wait();
 
-  win.set_value(true);
+  // win.set_value(true);
 
-  chassis.pid_drive_set(60_in, DRIVE_SPEED, true);
-  chassis.pid_wait();
+  // chassis.pid_drive_set(60_in, DRIVE_SPEED, true);
+  // chassis.pid_wait();
 
   
 
-  win.set_value(false);
+  // win.set_value(false);
 
-  chassis.pid_turn_set(-45_deg, TURN_SPEED);
-  chassis.pid_wait();
+  // chassis.pid_turn_set(-45_deg, TURN_SPEED);
+  // chassis.pid_wait();
 
-  chassis.pid_drive_set(70_in, DRIVE_SPEED, true);
-  chassis.pid_wait();
+  // chassis.pid_drive_set(60_in, DRIVE_SPEED, true);
+  // chassis.pid_wait();
 
-  inake.move(127);
+  // inake.move(127);
 
-  pros::delay(2000);
+  // pros::delay(2000);
 
-  inake.move(-127);
+  // inake.move(-127);
 
 }
 

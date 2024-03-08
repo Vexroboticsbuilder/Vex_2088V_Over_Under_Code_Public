@@ -155,8 +155,8 @@ void autonomous() {
   chassis.drive_brake_set(MOTOR_BRAKE_HOLD); // Set motors to hold.  This helps autonomous consistency
 
   // ez::as::auton_selector.selected_auton_call(); // Calls selected auton from autonomous selector
-  drive_and_turn();
-  //turn_example();
+  //drive_and_turn();
+swing_example();
 }
 
 
